@@ -19,13 +19,13 @@ A web application built with Laravel and Vue.js for managing companies and their
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-repository.git
+    git clone https://github.com/huzaifaa786/xepos-task
     ```
 
 2. Install dependencies:
 
     ```bash
-    cd your-repository
+    cd xepos-task
     composer install
     npm install
     ```
