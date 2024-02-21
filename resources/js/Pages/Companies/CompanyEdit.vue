@@ -62,9 +62,6 @@ const updateCompany = async () => {
             }
         });
 
-        // Clear form fields
-
-
     } catch (error) {
         console.error('Error updating company:', error);
         alert('An error occurred while updating the company. Please try again.');
@@ -92,27 +89,23 @@ const handleLogoChange = (event) => {
                         <InputLabel for="name" value="Name" />
                         <TextInput id="name" type="text" class="mt-1 block w-full" v-model="form.name" autofocus required
                             autocomplete="off" />
-                        <!-- <InputError class="mt-2" :message="form.value.errors" /> -->
                     </div>
 
                     <div>
                         <InputLabel for="email" value="Email" />
                         <TextInput id="email" type="email" class="mt-1 block w-full" v-model="form.email"
                             autocomplete="off" />
-                        <!-- <InputError class="mt-2" :message="form.errors.email" /> -->
                     </div>
 
                     <div>
                         <InputLabel for="logo" value="Logo" />
                         <input type="file" id="logo" @change="handleLogoChange" accept="image/*">
-                        <!-- <InputError class="mt-2" :message="form.errors.logo" /> -->
                     </div>
 
                     <div>
                         <InputLabel for="website" value="Website" />
                         <TextInput id="website" type="text" class="mt-1 block w-full" v-model="form.website"
                             autocomplete="off" />
-                        <!-- <InputError class="mt-2" :message="form.errors.website" /> -->
                     </div>
 
                     <div class="flex justify-end">

@@ -33,10 +33,8 @@ const confirmDelete = (companyId) => {
 };
 
 const deleteCompany = (companyId) => {
-    // Add your delete request logic here
     axios.get(`http://127.0.0.1:8000/api/company/destroy/${companyId}`)
         .then(() => {
-            // After successful deletion, you might want to refresh the company list
             fetchCompanies('http://127.0.0.1:8000/api/company');
         })
         .catch(error => console.error('Error deleting company:', error));
