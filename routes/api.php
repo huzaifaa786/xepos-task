@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::middleware('auth:sanctum')->group(function () {
 Route::post('/company/store', [CompanyController::class, 'store']);
 Route::get('/company', [CompanyController::class, 'index']);
 Route::get('/company/all', [CompanyController::class, 'getAllCompanies']);
@@ -26,5 +25,4 @@ Route::post('/employee/store', [EmployeeController::class, 'store']);
 Route::get('/employee', [EmployeeController::class, 'index']);
 Route::get('/employee/destroy/{id}', [EmployeeController::class, 'destroy']);
 Route::post('/employee/update/{id}', [EmployeeController::class, 'update']);
-// });
 
